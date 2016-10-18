@@ -1,6 +1,12 @@
 {
   "name": "Blizzard.js Example App",
   "description": "An example app demonstrating the Blizzard.js API",
-  "repository": "https://github.com/benweier/blizzard.js/tree/master/example",
-  "keywords": ["node", "blizzard.js", "battle.net", "api"]
+  "repository": "https://github.com/benweier/blizzard.js/tree/example",
+  "keywords": ["node", "blizzard.js", "battle.net", "api"],
+  "env": {
+    "BATTLENET_API_KEY": {
+      "description": "Your Battle.net API key from the Blizzard Developer Portal",
+      "required": true
+    }
+  }
 }
