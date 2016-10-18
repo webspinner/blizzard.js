@@ -25,6 +25,7 @@
     "no-array-constructor": 2,
     "no-caller": 2,
     "no-catch-shadow": 2,
+    "no-console": 0,
     "no-dupe-keys": 2,
     "no-empty": 2,
     "no-eval": 2,
