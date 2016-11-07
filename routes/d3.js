@@ -21,9 +21,9 @@ router.get('/:origin/era/:id?/:leaderboard?', (req, res) => {
   const id = req.params.id;
   const leaderboard = req.params.leaderboard;
   const locale = req.query.locale;
-  const token = req.query.token;
+  const access_token = req.query.access_token;
 
-  blizzard.d3.era({ id, leaderboard, origin, locale, token })
+  blizzard.d3.era({ id, leaderboard, origin, locale, access_token })
     .then(response => res.json(response.data))
     .catch(err => res.json(err.response.data));
 });
@@ -33,9 +33,9 @@ router.get('/:origin/season/:id?/:leaderboard?', (req, res) => {
   const id = req.params.id;
   const leaderboard = req.params.leaderboard;
   const locale = req.query.locale;
-  const token = req.query.token;
+  const access_token = req.query.access_token;
 
-  blizzard.d3.season({ id, leaderboard, origin, locale, token })
+  blizzard.d3.season({ id, leaderboard, origin, locale, access_token })
     .then(response => res.json(response.data))
     .catch(err => res.json(err.response.data));
 });
